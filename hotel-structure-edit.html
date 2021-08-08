@@ -118,7 +118,7 @@
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Files/Upload.svg-->
@@ -158,7 +158,7 @@
 													<span class="menu-text">예약체크인</span>
 												</a>
 											</li>
-											<li class="menu-item menu-item-active" aria-haspopup="true">
+											<li class="menu-item" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -304,7 +304,7 @@
 									<h5>호텔관리</h5>
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 								</li>
-								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -337,7 +337,7 @@
 													<span class="menu-text">호텔기본정보등록</span>
 												</a>
 											</li>
-											<li class="menu-item" aria-haspopup="true">
+											<li class="menu-item menu-item-active" aria-haspopup="true">
 												<a href="hotel-structure.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -555,12 +555,12 @@
 								<!--begin::Info-->
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<!--begin::Page Title-->
-									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">키발급</h5>
+									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">호텔관리</h5>
 									<!--end::Page Title-->
 									<!--begin::Actions-->
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
-									<span class="text-muted font-weight-bold mr-4">키발급하기</span>
-									<a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">체크아웃</a>
+									<span class="text-muted font-weight-bold mr-4">호텔등록관리</span>
+									<a href="#" class="btn btn-light-warning btn-sm">호텔건물수정</a>
 									<!--end::Actions-->
 								</div>
 								<!--end::Info-->
@@ -597,128 +597,44 @@
 										</span>
 									</div>
 									<div class="alert-text">
-									발급키 삭제(Check-out) 페이지입니다.
-									</div>
+									<p>호텔 건물정보를 수정하는 곳입니다. 먼저 호텔기본정보를 등록하셔야 합니다.</p>호텔기본정보등록하기
+									<a class="font-weight-bold" href="hotel-regigter.html" target="_self">바로가기</a>.</div>
 								</div>
-								<!--end::Notice-->
+								<!--end::Notice-->								
 								<!--begin::Card-->
-								<div class="card card-custom gutter-b">
+								<div class="card card-custom gutter-b example example-compact">
 									<div class="card-header">
-										<h3 class="card-title">검색 ㅣ<span style="color: brown;">키 정보를 입력해 주세요.</span></h3>
+										<h3 class="card-title">호텔건물수정ㅣ호텔건물 이름을 수정해주세요!</h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
 										<div class="card-body">
 											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">호텔명</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="이름/연락처" />
+     												<select class="form-control form-control-solid">
+														<option>Waffle Stay Hotel</option>
+                                    	            </select>	
 												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">건물이름</label>
 												<div class="col-lg-3">
-                                                    <button class="btn btn-light-primary" type="button">검색</button>    
-												</div>
-												<label class="col-lg-3 col-form-label text-lg-right text-danger">검색에 없을 경우 키발급리스트에서 확인해주세요</label>
-												<a href="key-issued-list.html" class="btn btn-light-warning btn-sm">키발급리스트</a>
-
+													<input type="text" class="form-control form-control-solid" value="본관" />
+												</div>												
 											</div>
-        								</div>
+										</div>
+										<div class="card-footer">
+											<div class="row">
+												<div class="col-lg-2"></div>
+												<div class="col-lg-10">
+													<a href="hotel-structure.html" class="btn btn-light-primary mr-2">수정 </a>
+													<a href="hotel-structure.html"  class="btn btn-secondary">취소</a>
+												</div>
+											</div>
+										</div>
 									</form>
 									<!--end::Form-->
 								</div>
-						        <!--end::Card-->
-
-								<!--begin::Card-->
-								<div class="card card-custom gutter-b">
-									<div class="card-header">
-										<h3 class="card-title">키 삭제정보ㅣCheck Out</h3>
-									</div>
-									<!--begin::Form-->
-									<form class="form">
-										<div class="card-body">
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">예약번호</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="10123451" />
-												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">예약자명</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="이철수" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">예약일</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="21/06/07" />
-												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">전화번호</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="010-1234-1234" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">체크인</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="21/07/17" />
-												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">체크아웃</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="21/07/18" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">객실동</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="별관" />
-												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">호실</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="1205" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">추가 발급키포함</label>
-												<div class="col-9 col-form-label">
-													<div class="radio-inline">
-														<label class="radio">
-														<input type="radio" name="radios5" checked="checked" />
-														<span></span>포함</label>
-														<label class="radio">
-														<input type="radio" name="radios5" />
-														<span></span>미포함</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">취소키 선택</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
-														<label class="checkbox">
-														<input type="checkbox" checked="checked" />
-														<span></span>All</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>모바일키</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>카드키</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>번호키</label>
-													</div>
-												</div>
-											</div>
-											<div class="card-footer">
-												<div class="row">
-													<div class="col-lg-2"></div>
-													<div class="col-lg-10">
-														<button type="reset" class="btn btn-light-danger mr-2">발급키삭제</button>
-													</div>
-												</div>
-											</div>
-        								</div>
-									</form>
-									<!--end::Form-->
-								</div>
-						        <!--end::Card-->
+								<!--end::Card-->		
 							</div>
 							<!--end::Container-->
 						</div>
@@ -782,7 +698,7 @@
 		<!-- end::User Panel-->
 		<!--begin::Global Theme Bundle(used by all pages)-->
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="assets/plugins/prismjs.bundle.js"></script>
+		<script src="assets/plugins/custom/prismjs/prismjs.bundle.js"></script>
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Scripts(used by this page)-->

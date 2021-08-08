@@ -154,6 +154,14 @@
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
+												<a href="check-in-reservation.html" class="menu-link">
+													<i class="menu-bullet menu-bullet-dot">
+														<span></span>
+													</i>
+													<span class="menu-text">예약체크인</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -174,7 +182,7 @@
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">키발급리스트</span>
+													<span class="menu-text">객실키 발급리스트</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -599,7 +607,7 @@
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b example example-compact">
 									<div class="card-header">
-										<h3 class="card-title">호텔건물 층 등록</h3>
+										<h3 class="card-title">호텔건물 층 등록ㅣ<span style="color: red;">(예시:지하1층=B01 / 지상2층=02)</span></h3>
 										<div class="card-toolbar">
 											<div class="example-tools justify-content-center">
 												<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
@@ -628,9 +636,19 @@
 												</div>																							
 											</div>
 											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">층등록</label>
+												<label class="col-lg-2 col-form-label text-lg-right text-primary">시작 층번호</label>
 												<div class="col-lg-3">
-													<input type="number" class="form-control" placeholder="층 등록 예시 ( 1층 : 01 / 7층 : 07 )" />
+													<input type="text" class="form-control" placeholder="층 번호를 입력하세요" />
+												</div>
+												<label class="col-lg-2 col-form-label text-lg-right text-primary">최종 층번호</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control" placeholder="마지막 층 번호를 입력하세요" />
+												</div>												
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right text-danger">개별 층 등록</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control" placeholder="등록하려는 층 을 입력" />
 												</div>
 											</div>
 										</div>
@@ -638,7 +656,7 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-10">
-													<button type="reset" class="btn btn-success mr-2">등록</button>
+													<button type="reset" class="btn btn-light-primary mr-2">저장</button>
 													<button type="reset" class="btn btn-secondary">취소</button>
 												</div>
 											</div>
@@ -742,8 +760,8 @@
 											</div>
 										</div>
 										<!--begin: Datatable-->
-										<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable">
-											<thead>
+										<table class="datatable datatable-bordered datatable-head-custom table" id="kt_datatable">
+											<thead class="thead-light">
 												<tr>
 													<th>호텔Code</th>
 													<th>호텔이름</th>
@@ -761,10 +779,10 @@
 													<td>본관</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -776,10 +794,10 @@
 													<td>본관</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -791,10 +809,10 @@
 													<td>본관</td>
 													<td>02</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -806,10 +824,10 @@
 													<td>본관</td>
 													<td>03</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -821,10 +839,10 @@
 													<td>별관</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -836,10 +854,10 @@
 													<td>별관</td>
 													<td>02</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -851,10 +869,10 @@
 													<td>오션동</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -866,10 +884,10 @@
 													<td>오션동</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -881,10 +899,10 @@
 													<td>오션동</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -896,10 +914,10 @@
 													<td>오션동</td>
 													<td>02</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -911,10 +929,10 @@
 													<td>오션동</td>
 													<td>03</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -926,10 +944,10 @@
 													<td>오션동</td>
 													<td>05</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -941,10 +959,10 @@
 													<td>블루동</td>
 													<td>01</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -956,10 +974,10 @@
 													<td>블루동</td>
 													<td>02</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>
@@ -971,10 +989,10 @@
 													<td>블루동</td>
 													<td>03</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
+														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="#" class="btn btn-icon btn-danger">
+														<a href="#" class="btn btn-icon btn-light-danger btn-sm">
 															<i class="flaticon-delete"></i>
 														</a>
 													</td>

@@ -154,6 +154,14 @@
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
+												<a href="check-in-reservation.html" class="menu-link">
+													<i class="menu-bullet menu-bullet-dot">
+														<span></span>
+													</i>
+													<span class="menu-text">예약체크인</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -174,7 +182,7 @@
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">키발급리스트</span>
+													<span class="menu-text">객실키 발급리스트</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -610,7 +618,7 @@
 													<input type="text" class="form-control" placeholder="예약자명/예약번호" />
 												</div>
 												<div class="col-lg-3">
-                                                    <button class="btn btn-primary" type="button">검색</button>    
+                                                    <button class="btn btn-light-primary" type="button">검색</button>    
 												</div>
 											</div>
 										</div>
@@ -662,7 +670,7 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-10">
-													<a href="check-in.html" class="btn btn-danger mr-2">키발급바로가기</a>
+													<a href="check-in-reservation.html" class="btn btn-light-danger mr-2">키발급바로가기</a>
 												</div>
 											</div>
 										</div>
@@ -748,26 +756,27 @@
 									</div>
 									<div class="card-body">
 										<!--begin: Search Form-->
-										<!--begin::Search Form-->
-										<div class="mb-7">
-											<div class="row align-items-center">
-												<div class="col-lg-9 col-xl-8">
-													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="input-icon">
-																<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
-																<span>
-																	<i class="flaticon2-search-1 text-muted"></i>
-																</span>
-															</div>
-														</div>
-													</div>
+										<div class="form-group row">
+											<div class="col-lg-3">
+												<div class="input-icon">
+													<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
+													<span>
+														<i class="flaticon2-search-1 text-muted"></i>
+													</span>
 												</div>
+					            			</div>
+											<label class="col-lg-2 col-form-label text-lg-right">체크인</label>
+											<div class="col-lg-3">
+												<input class="form-control" type="date" value="2021-08-01" id="example-date-input" />
+											</div>
+											<div class="col-lg-3">
+												<button class="btn btn-light-primary" type="button">검색</button>    
 											</div>
 										</div>
+
 										<!--begin: Datatable-->
-										<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable">
-											<thead>
+										<table class="datatable datatable-bordered datatable-head-custom, table" id="kt_datatable">
+											<thead class="thead-light">
 												<tr>
 													<th>예약번호</th>
 													<th>예약자명</th>
@@ -789,8 +798,8 @@
 													<td>010-1234-1234</td>
 													<td>승인</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
-															<i class="flaticon2-pen"></i>
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
 														</a>
 													</td>
 												</tr>
@@ -803,8 +812,8 @@
 													<td>010-1234-1234</td>
 													<td>미승인</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
-															<i class="flaticon2-pen"></i>
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
 														</a>
 													</td>
 												</tr>
@@ -817,8 +826,8 @@
 													<td>010-1234-1234</td>
 													<td>승인</td>
 													<td class="center">
-														<a href="#" class="btn btn-icon btn-primary">
-															<i class="flaticon2-pen"></i>
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
 														</a>
 													</td>
 												</tr>

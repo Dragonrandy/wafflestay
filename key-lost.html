@@ -158,7 +158,7 @@
 													<span class="menu-text">예약체크인</span>
 												</a>
 											</li>
-											<li class="menu-item menu-item-active" aria-haspopup="true">
+											<li class="menu-item" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -166,7 +166,7 @@
 													<span class="menu-text">체크아웃</span>
 												</a>
 											</li>
-											<li class="menu-item" aria-haspopup="true">
+											<li class="menu-item aria-haspopup="true">
 												<a href="key-additional.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -174,7 +174,7 @@
 													<span class="menu-text">추가발급</span>
 												</a>
 											</li>
-											<li class="menu-item" aria-haspopup="true">
+											<li class="menu-item menu-item-active" aria-haspopup="true">
 												<a href="key-issued-list.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -560,7 +560,7 @@
 									<!--begin::Actions-->
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
 									<span class="text-muted font-weight-bold mr-4">키발급하기</span>
-									<a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">체크아웃</a>
+									<a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">분실등록</a>
 									<!--end::Actions-->
 								</div>
 								<!--end::Info-->
@@ -597,39 +597,15 @@
 										</span>
 									</div>
 									<div class="alert-text">
-									발급키 삭제(Check-out) 페이지입니다.
+									키 분실등록 페이지입니다.
 									</div>
 								</div>
 								<!--end::Notice-->
-								<!--begin::Card-->
-								<div class="card card-custom gutter-b">
-									<div class="card-header">
-										<h3 class="card-title">검색 ㅣ<span style="color: brown;">키 정보를 입력해 주세요.</span></h3>
-									</div>
-									<!--begin::Form-->
-									<form class="form">
-										<div class="card-body">
-											<div class="form-group row">
-												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="이름/연락처" />
-												</div>
-												<div class="col-lg-3">
-                                                    <button class="btn btn-light-primary" type="button">검색</button>    
-												</div>
-												<label class="col-lg-3 col-form-label text-lg-right text-danger">검색에 없을 경우 키발급리스트에서 확인해주세요</label>
-												<a href="key-issued-list.html" class="btn btn-light-warning btn-sm">키발급리스트</a>
-
-											</div>
-        								</div>
-									</form>
-									<!--end::Form-->
-								</div>
-						        <!--end::Card-->
 
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b">
 									<div class="card-header">
-										<h3 class="card-title">키 삭제정보ㅣCheck Out</h3>
+										<h3 class="card-title">발급된 정보 ㅣ<span style="color: brown;">기발급된 정보입니다.</span></h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
@@ -674,35 +650,33 @@
 													<input type="text" class="form-control form-control-solid" value="1205" />
 												</div>
 											</div>
+
+        								</div>
+									</form>
+									<!--end::Form-->
+								</div>
+						        <!--end::Card-->
+								<!--begin::Card-->
+								<div class="card card-custom gutter-b">
+									<div class="card-header">
+										<h3 class="card-title">분실키 등록삭제 ㅣ<span style="color: brown;">삭제 후 재발급 해주세요.</span></h3>
+									</div>
+									<!--begin::Form-->
+									<form class="form">
+										<div class="card-body">
 											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">추가 발급키포함</label>
-												<div class="col-9 col-form-label">
-													<div class="radio-inline">
-														<label class="radio">
-														<input type="radio" name="radios5" checked="checked" />
-														<span></span>포함</label>
-														<label class="radio">
-														<input type="radio" name="radios5" />
-														<span></span>미포함</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">취소키 선택</label>
+												<label class="col-2 col-form-label text-lg-right">키 선택</label>
 												<div class="col-9 col-form-label">
 													<div class="checkbox-inline">
 														<label class="checkbox">
-														<input type="checkbox" checked="checked" />
+														<input type="checkbox" name="Checkboxes5" checked="checked" />
 														<span></span>All</label>
 														<label class="checkbox">
-														<input type="checkbox" />
+														<input type="checkbox" name="Checkboxes5" />
 														<span></span>모바일키</label>
 														<label class="checkbox">
-														<input type="checkbox" />
+														<input type="checkbox" name="Checkboxes5" />
 														<span></span>카드키</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>번호키</label>
 													</div>
 												</div>
 											</div>
@@ -710,15 +684,17 @@
 												<div class="row">
 													<div class="col-lg-2"></div>
 													<div class="col-lg-10">
-														<button type="reset" class="btn btn-light-danger mr-2">발급키삭제</button>
+														<button type="reset" class="btn btn-light-danger">발급키삭제</button>
+														<a href="key-additional.html" class="btn btn-light-primary">추가발급</a>
 													</div>
 												</div>
 											</div>
+
         								</div>
 									</form>
 									<!--end::Form-->
 								</div>
-						        <!--end::Card-->
+							   <!--end::Card-->
 							</div>
 							<!--end::Container-->
 						</div>

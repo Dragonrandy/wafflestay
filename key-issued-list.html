@@ -151,6 +151,14 @@
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
+												<a href="check-in-reservation.html" class="menu-link">
+													<i class="menu-bullet menu-bullet-dot">
+														<span></span>
+													</i>
+													<span class="menu-text">예약체크인</span>
+												</a>
+											</li>
+											<li class="menu-item" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -171,7 +179,7 @@
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">키발급리스트</span>
+													<span class="menu-text">객실키 발급리스트</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -597,7 +605,7 @@
 								<div class="card card-custom">
 									<div class="card-header flex-wrap border-0 pt-6 pb-0">
 										<div class="card-title">
-											<h3 class="card-label">발급된 키 리스트
+											<h3 class="card-label">발급된 객실 키 리스트
 											<span class="d-block text-muted pt-2 font-size-sm"><span style="color: crimson;">검색후 선택버튼을 클릭하면 세부내용을 보실 수 있습니다.</span></span></h3>
 										</div>
 										<div class="card-toolbar">
@@ -688,63 +696,106 @@
 											</div>
 										</div>
 										<!--begin: Datatable-->
-										<table class="datatable datatable-bordered datatable-head-custom" id="kt_datatable">
-											<thead>
+										<table class="datatable datatable-bordered datatable-head-custom table" id="kt_datatable">
+											<thead class="thead-light">
 												<tr>
-													<th>예약번호</th>
+													<th>등록번호</th>
+													<th>객실동</th>
+													<th>호실</th>
 													<th>이름</th>
 													<th>전화번호</th>
 													<th>체크인</th>
-													<th>체크아웃</th>
-													<th>객실동</th>
-													<th>호실</th>
 													<th>발급유형</th>
-													<th>추가발급</th>
+													<th>추가발급ㅣ분실등록</th>
+													<th>객실변경</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
 													<td>10123451</td>
+													<td>별관</td>
+													<td>1434</td>
 													<td>이철수</td>
 													<td>010-1234-1234</td>
 													<td>21/07/17</td>
-													<td>21/07/18</td>
-													<td>별관</td>
-													<td>1434</td>
-													<td>ALL</td>
+													<td>카드키</td>
 													<td class="center">
-														<a href="key-additional.html" class="btn btn-icon btn-primary">
+														<a href="key-additional.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-avatar"></i>
+														</a> ㅣ
+														<a href="key-lost.html" class="btn btn-icon btn-light-danger btn-sm">
+															<i class="flaticon2-list-3"></i>
+														</a>
+													</td>
+													<td class="center">
+														<a href="key-change-room.html" class="btn btn-icon btn-light-success btn-sm">
+															<i class="flaticon-logout"></i>
 														</a>
 													</td>
 												</tr>
 												<tr>
-													<td>10120451</td>
+													<td>10562451</td>
+													<td>블루동</td>
+													<td>1021</td>
 													<td>정우성</td>
 													<td>010-1234-1234</td>
 													<td>21/07/17</td>
-													<td>21/07/18</td>
-													<td>블루동</td>
-													<td>1021</td>
 													<td>모바일</td>
 													<td class="center">
-														<a href="key-additional.html" class="btn btn-icon btn-primary">
+														<a href="key-additional.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-avatar"></i>
+														</a> ㅣ
+														<a href="key-lost.html" class="btn btn-icon btn-light-danger btn-sm">
+															<i class="flaticon2-list-3"></i>
+														</a>
+													</td>
+													<td class="center">
+														<a href="key-change-room.html" class="btn btn-icon btn-light-success btn-sm">
+															<i class="flaticon-logout"></i>
 														</a>
 													</td>
 												</tr>
 												<tr>
-													<td>15620451</td>
+													<td>10123451</td>
+													<td>오션동</td>
+													<td>904</td>
 													<td>황정민</td>
 													<td>010-1234-1234</td>
 													<td>21/07/17</td>
-													<td>21/07/18</td>
-													<td>오션동</td>
-													<td>904</td>
 													<td>카드키</td>
 													<td class="center">
-														<a href="key-additional.html" class="btn btn-icon btn-primary">
+														<a href="key-additional.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-avatar"></i>
+														</a> ㅣ
+														<a href="key-lost.html" class="btn btn-icon btn-light-danger btn-sm">
+															<i class="flaticon2-list-3"></i>
+														</a>
+													</td>
+													<td class="center">
+														<a href="key-change-room.html" class="btn btn-icon btn-light-success btn-sm">
+															<i class="flaticon-logout"></i>
+														</a>
+													</td>
+												</tr>
+												<tr>
+													<td>10123451</td>
+													<td>오션동</td>
+													<td>904</td>
+													<td>김국진</td>
+													<td>010-1234-1234</td>
+													<td>21/07/27</td>
+													<td>번호키</td>
+													<td class="center">
+														<a href="key-additional.html" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-avatar"></i>
+														</a> ㅣ
+														<a href="key-lost.html" class="btn btn-icon btn-light-danger btn-sm">
+															<i class="flaticon2-list-3"></i>
+														</a>
+													</td>
+													<td class="center">
+														<a href="key-change-room.html" class="btn btn-icon btn-light-success btn-sm">
+															<i class="flaticon-logout"></i>
 														</a>
 													</td>
 												</tr>
