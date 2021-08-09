@@ -797,20 +797,22 @@
 										<div class="form-group row">
 											<div class="col-lg-3">
 												 <select class="form-control">
+													<option>--발급카드분류--</option>
+													<option>메이드(10)</option>
+													<option>시설관리(20)</option>
+													<option>리셋카드(50)</option>
+													<option>마스터(90)</option>
+													<option>최고마스터(99)</option>
+												</select>	
+											</div>	
+											<div class="col-lg-3">
+												<select class="form-control">
 													<option>--스텝카드이름선택--</option>
 													<option>마스터카드</option>
 													<option>본관마스터카드</option>
 													<option>블루동11층</option>
 													<option>시설마스터</option>
 													<option>오션동마스터</option>
-												</select>	
-											</div>	
-											<div class="col-lg-3">
-												<select class="form-control">
-												   <option>--카드발급형태--</option>
-												   <option>All</option>
-												   <option>모바일</option>
-												   <option>카드키</option>
 											   </select>	
 										   </div>
 										   <a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
@@ -823,11 +825,11 @@
 													<th>직원Code</th>
 													<th>이름</th>
 													<th>직책</th>
-													<th>발급형태</th>
+													<th>발급카드분류</th>
 													<th>스텝카드이름</th>
 													<th>카드설명</th>
 													<th>사용종료일</th>
-													<th>수정ㅣ삭제</th>
+													<th>수정</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -835,7 +837,7 @@
 													<td>2012005</td>
 													<td>이정재</td>
 													<td>과장</td>
-													<td>카드키</td>
+													<td>시설관리(20)</td>
 													<td>시설마스터</td>
 													<td>호텔모든시설 입출입</td>
 													<td>2021-09-01</td>
@@ -843,16 +845,13 @@
 														<a href="key-management-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="key-management-edit.html" class="btn btn-icon btn-light-danger btn-sm">
-															<i class="flaticon-delete"></i>
-														</a>
 													</td>
 												</tr>
 												<tr class="table-secondary">
 													<td>0912005</td>
 													<td>강대호</td>
 													<td>주임</td>
-													<td>모바일</td>
+													<td>마스터(90)</td>
 													<td>본관마스터</td>
 													<td>본관 전지역출입</td>
 													<td>2021-09-01</td>
@@ -860,16 +859,13 @@
 														<a href="key-management-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="key-management-edit.html" class="btn btn-icon btn-light-danger btn-sm">
-															<i class="flaticon-delete"></i>
-														</a>
 													</td>
 												</tr>
 												<tr>
 													<td>1612005</td>
 													<td>김희성</td>
 													<td>대리</td>
-													<td>모바일/카드키</td>
+													<td>메이드(10)</td>
 													<td>블루동11층</td>
 													<td>블루동 11층 출입키</td>
 													<td>2021-09-01</td>
@@ -877,16 +873,13 @@
 														<a href="key-management-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="key-management-edit.html" class="btn btn-icon btn-light-danger btn-sm">
-															<i class="flaticon-delete"></i>
-														</a>
 													</td>
 												</tr>
 												<tr class="table-secondary">
 													<td>0912005</td>
 													<td>이선아</td>
 													<td>주임</td>
-													<td>모바일</td>
+													<td>시설관리(20)</td>
 													<td>시설마스터</td>
 													<td>호텔 모든시설 출입키</td>
 													<td>2021-09-01</td>
@@ -894,25 +887,19 @@
 														<a href="key-management-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
 														</a>
-														<a href="key-management-edit.html" class="btn btn-icon btn-light-danger btn-sm">
-															<i class="flaticon-delete"></i>
-														</a>
 													</td>
 												</tr>
 												<tr>
 													<td>0912005</td>
 													<td>이순이</td>
 													<td>직원</td>
-													<td>카드키</td>
+													<td>메이드(10)</td>
 													<td>오션동 메이드 마스터</td>
 													<td>오션동 청소메이드 출입키</td>
 													<td>2021-09-01</td>
 													<td class="center">
 														<a href="key-management-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
-														</a>
-														<a href="key-management-edit.html" class="btn btn-icon btn-light-danger btn-sm">
-															<i class="flaticon-delete"></i>
 														</a>
 													</td>
 												</tr>
