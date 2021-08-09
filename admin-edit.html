@@ -597,14 +597,14 @@
 										</span>
 									</div>
 									<div class="alert-text">
-									   키발급시스템 관리자를 등록하는 곳입니다.
+									   키발급시스템 관리자를 수정ㅣ삭제하는 곳입니다.
 									</div>
 								</div>
 								<!--end::Notice-->								
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b">
 									<div class="card-header">
-										<h3 class="card-title">관리자 등록 ㅣ<span style="color: brown;">수정사항을 입력하고 수정을 눌러주세요!</span></h3>
+										<h3 class="card-title">관리자 수정 ㅣ<span style="color: brown;">삭제</span></h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
@@ -669,8 +669,9 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-10">
-													<a href="admin-list.html" class="btn btn-light-primary mr-2">수정</a>
-													<button type="reset" class="btn btn-secondary">취소</button>
+													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_primary">저장</button>
+													<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">삭제</button>
+													<a href="admin-list.html" class="btn btn-secondary">목록</a>
 												</div>
 											</div>
 										</div>
@@ -747,6 +748,7 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/html-table.js"></script>
 		<script src="assets/js/pages/widgets.js"></script>
+		<script src="assets/js/pages/sweetalert2.js"></script>
 		<!--end::Page Scripts-->
 		<!--end::Page Scripts-->
 	</body>

@@ -604,7 +604,7 @@
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b example example-compact">
 									<div class="card-header">
-										<h3 class="card-title">호텔건물수정ㅣ호텔건물 이름을 수정해주세요!</h3>
+										<h3 class="card-title">호텔건물수정ㅣ삭제</h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
@@ -626,8 +626,9 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-10">
-													<a href="hotel-structure.html" class="btn btn-light-primary mr-2">수정 </a>
-													<a href="hotel-structure.html"  class="btn btn-secondary">취소</a>
+													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_primary">저장</button>
+													<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">삭제</button>
+													<a href="hotel-structure.html"  class="btn btn-secondary">목록</a>
 												</div>
 											</div>
 										</div>
@@ -704,6 +705,7 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/crud/ktdatatable/base/html-table.js"></script>
 		<script src="assets/js/pages/widgets.js"></script>
+		<script src="assets/js/pages/sweetalert2.js"></script>
 		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->

@@ -829,12 +829,13 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-3">
-													<button type="reset" class="btn btn-light-primary mr-2">모바일키 생성</button>
-													<button type="reset" class="btn btn-light-success mr-2">카드키 등록</button>
+													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_mobile">모바일 생성</button>
+													<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">카드키 발급</button>
+													<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">발급키 삭제</button>
 												</div>
 												<div class="col-lg-2"></div>
 												<div class="col-lg-3">
-													<a href="key-register.html" class="btn btn-light-danger mr-2">확인</a>
+													<a href="key-register.html" class="btn btn-secondary mr-2">목록</a>
 												</div>
 											</div>
 										</div>
@@ -911,6 +912,7 @@
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="assets/js/pages/crud/ktdatatable/base/html-table.js"></script>
 		<script src="assets/js/pages/widgets.js"></script>
+		<script src="assets/js/pages/sweetalert2.js"></script>
 		<!--end::Page Scripts-->
 	</body>
 	<!--end::Body-->
