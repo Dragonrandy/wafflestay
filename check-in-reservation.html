@@ -693,130 +693,161 @@
 								</div>
 						        <!--end::Card-->
 								<!--begin::Card-->
-								<div class="card card-custom gutter-b">
-									<div class="card-header">
-										<h3 class="card-title">추가옵션선택 ㅣ<span style="color: brown;">선택 장소 출입가능, 옵션추가는 시설등록관리에서 할 수 있습니다.</span></h3>
+								<div class="card card-custom">
+									<div class="card-header flex-wrap border-0 pt-6 pb-0">
+										<div class="card-title">
+											<h3 class="card-label text-danger">선택옵션리스트ㅣ카드키 발급가능 옵션 최대14개입니다.</h3>
+										</div>
 									</div>
-									<!--begin::Form-->
-									<form class="form">
-										<div class="card-body">
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">레스토랑ㅣ카페</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
+									<div class="card-body">
+										<!--begin: Datatable-->
+										<table class="datatable datatable-bordered datatable-head-custom table" id="kt_datatable" >
+											<thead class="thead-light">
+												<tr>
+													<th style="text-align: center;">발행선택</th>
+													<th>시설분류1</th>
+													<th>시설이름</th>
+													<th>이용시작일</th>
+													<th>이용종료일</th>
+													<th>이용시간</th>
+													<th>종료시간</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>All</label>
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>다이닝</td>
+													<td>피렌체뷔페</td>
+													<td>2021/08/01</td>
+													<td>2021/08/15</td>
+													<td>07:00</td>
+													<td>10:00</td>
+												</tr>
+												<tr>
+													<td>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>마젤란뷔페</label>
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>다이닝</td>
+													<td>피렌체뷔페</td>
+													<td>2021/08/01</td>
+													<td>2021/08/15</td>
+													<td>17:00</td>
+													<td>20:00</td>
+												</tr>
+												<tr>
+													<td>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>피렌체뷔페</label>
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>다이닝</td>
+													<td>중식당</td>
+													<td>2021/08/01</td>
+													<td>2021/08/15</td>
+													<td>11:00</td>
+													<td>13:00</td>
+												</tr>
+												<tr>
+													<td>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>스테이카페</label>
-													</div>
-												</div>
-											</div>
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>Pool</td>
+													<td>인피니티풀</td>
+													<td>2021/08/03</td>
+													<td>2021/08/10</td>
+													<td>06:00</td>
+													<td>20:00</td>
+												</tr>
+												<tr>
+													<td>
+														<label class="checkbox">
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>헬스</td>
+													<td>스파Gym</td>
+													<td>2021/08/01</td>
+													<td>2021/08/15</td>
+													<td>06:00</td>
+													<td>09:00</td>
+												</tr>
+												<tr>
+													<td>
+														<label class="checkbox">
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>비지니스</td>
+													<td>회의실</td>
+													<td>2021/08/09</td>
+													<td>2021/08/10</td>
+													<td>13:00</td>
+													<td>15:00</td>
+												</tr>
+												<tr>
+													<td>
+														<label class="checkbox">
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>VIP</td>
+													<td>스파</td>
+													<td>2021/08/09</td>
+													<td>2021/08/10</td>
+													<td>06:00</td>
+													<td>09:00</td>
+												</tr>
+												<tr>
+													<td>
+														<label class="checkbox">
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>카페&펍</td>
+													<td>비어하우스</td>
+													<td>2021/08/09</td>
+													<td>2021/08/09</td>
+													<td>18:00</td>
+													<td>22:00</td>
+												</tr>
+												<tr>
+													<td>
+														<label class="checkbox">
+														<input type="checkbox"/>
+														<span></span></label>
+													</td>
+													<td>VIP</td>
+													<td>라운지</td>
+													<td>2021/08/09</td>
+													<td>2021/08/10</td>
+													<td>10:00</td>
+													<td>22:00</td>
+												</tr>
 
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">VIP전용</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>All</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>라운지</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>스파</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>칵데일바</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">헬스ㅣ스파</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>All</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>헬스Gym</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>스파ㅣ사우나</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>골프연습장</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">수영장</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
-														<label class="checkbox">
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>All</label>
-														<input type="checkbox" />
-														<span></span>실내수영장</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>실외수영장</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>인피니티풀</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>VIP전용풀</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">이벤트홀</label>
-												<div class="col-9 col-form-label">
-													<div class="checkbox-inline">
-														<label class="checkbox">
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>All</label>
-														<input type="checkbox" />
-														<span></span>와이너리파티</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<label class="checkbox">
-														<span></span>맥주축제</label>
-														<input type="checkbox" />
-														<span></span>북카페</label>
-														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>공유오피스</label>
-													</div>
-												</div>
-											</div>
-        								</div>
-										<div class="card-footer">
-											<div class="row">
-												<div class="col-lg-2"></div>
-												<div class="col-lg-10">
-													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_mobile">모바일 전송</button>
-													<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">카드키 발급</button>
-													<a href="check-in-password.html" type="button" class="btn btn-light-warning font-weight-bold" id="kt_sweetalert_number">번호키 발급</a>
-												</div>
+											</tbody>
+										</table>
+										<!--end: Datatable-->
+									</div>
+									<div class="card-footer">
+										<div class="row">
+											<div class="col-lg-2"></div>
+											<div class="col-lg-10">
+												<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">카드키 발급</button>
+												<button type="button" class="btn btn-light-warning font-weight-bold" id="kt_sweetalert_number">번호키 발급</button>
 											</div>
 										</div>
-									</form>
-									<!--end::Form-->
+									</div>
+
 								</div>
-							   <!--end::Card-->
+								<!--end::Card-->
 							</div>
 							<!--end::Container-->
 						</div>
@@ -884,6 +915,7 @@
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Theme Bundle-->
 		<!--begin::Page Scripts(used by this page)-->
+		<script src="assets/js/pages/crud/ktdatatable/base/html-table.js"></script>
 		<script src="assets/js/pages/html-table.js"></script>
 		<script src="assets/js/pages/widgets.js"></script>
 		<script src="assets/js/pages/bootstrap-timepicker.js"></script>

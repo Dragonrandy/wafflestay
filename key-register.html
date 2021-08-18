@@ -853,8 +853,7 @@
 											<div class="row">
 												<div class="col-lg-2"></div>
 												<div class="col-lg-10">
-													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_mobile">모바일 생성</button>
-													<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">카드키 발급</button>
+													<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">스텝키 등록</button>
 												</div>
 											</div>
 										</div>
@@ -960,20 +959,22 @@
 										<div class="form-group row">
 											<div class="col-lg-3">
 												 <select class="form-control form-control-solid">
+													<option>--카드분류--</option>
+													<option>10메이드(청소)</option>
+													<option>20시설관리</option>
+													<option>50리셋카드</option>
+													<option>90마스터카드</option>
+													<option>99최고마스터</option>
+												</select>	
+											</div>	
+											<div class="col-lg-3">
+												<select class="form-control form-control-solid">
 													<option>--스텝카드이름--</option>
 													<option>마스터카드</option>
 													<option>본관마스터카드</option>
 													<option>블루동11층</option>
 													<option>시설마스터</option>
 													<option>오션동마스터</option>
-												</select>	
-											</div>	
-											<div class="col-lg-3">
-												<select class="form-control form-control-solid">
-												   <option>--카드발급형태--</option>
-												   <option>All</option>
-												   <option>모바일</option>
-												   <option>카드키</option>
 											   </select>	
 										   </div>
 										   <a href="#" class="btn btn-light-primary px-6 font-weight-bold">Search</a>
@@ -987,16 +988,14 @@
 													<th>카드분류</th>
 													<th>스텝카드이름</th>
 													<th>스텝카드설명</th>
-													<th>발급유형</th>
 													<th>수정</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>마스터(90)</td>
+													<td>90 마스터</td>
 													<td>마스터카드</td>
 													<td>호텔전구역 입출입</td>
-													<td>카드키</td>
 													<td class="center">
 														<a href="key-register-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
@@ -1004,10 +1003,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td>마스터(90)</td>
+													<td>90 마스터</td>
 													<td>본관마스터</td>
 													<td>본관 전지역출입</td>
-													<td>모바일키/카드키</td>
 													<td class="center">
 														<a href="key-register-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
@@ -1015,10 +1013,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td>메이드(10)</td>
+													<td>10 메이드</td>
 													<td>블루동11층</td>
 													<td>블루동 11층 출입키</td>
-													<td>카드키</td>
 													<td class="center">
 														<a href="key-register-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
@@ -1026,10 +1023,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td>시설관리(20)</td>
+													<td>20 시설관리</td>
 													<td>시설마스터</td>
 													<td>호텔 모든시설 출입키</td>
-													<td>모바일키</td>
 													<td class="center">
 														<a href="key-register-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
@@ -1037,10 +1033,9 @@
 													</td>
 												</tr>
 												<tr>
-													<td>메이드(10)</td>
+													<td>10 메이드</td>
 													<td>오션동 메이드 마스터</td>
 													<td>오션동 청소메이드 출입키</td>
-													<td>모바일키/카드키</td>
 													<td class="center">
 														<a href="key-register-edit.html" class="btn btn-icon btn-light-info btn-sm">
 															<i class="flaticon2-settings"></i>
