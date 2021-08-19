@@ -1,6 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="ko">
 	<!--begin::Head-->
 	<head><base href="">
 		<meta charset="utf-8" />
@@ -121,7 +118,7 @@
 										</ul>
 									</div>
 								</li>
-								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Files/Upload.svg-->
@@ -161,12 +158,12 @@
 													<span class="menu-text">예약체크인</span>
 												</a>
 											</li>
-											<li class="menu-item" aria-haspopup="true">
+											<li class="menu-item menu-item-active" aria-haspopup="true">
 												<a href="check-out.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">체크아웃ㅣ분실재발급</span>
+													<span class="menu-text">체크아웃</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -307,7 +304,7 @@
 									<h5>호텔관리</h5>
 									<i class="menu-icon ki ki-bold-more-hor icon-md"></i>
 								</li>
-								<li class="menu-item menu-item-submenu menu-item-open menu-item-here" aria-haspopup="true" data-menu-toggle="hover">
+								<li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover">
 									<a href="javascript:;" class="menu-link menu-toggle">
 										<span class="svg-icon menu-icon">
 											<!--begin::Svg Icon | path:assets/media/svg/icons/Layout/Layout-4-blocks.svg-->
@@ -348,7 +345,7 @@
 													<span class="menu-text">호텔건물등록</span>
 												</a>
 											</li>
-											<li class="menu-item menu-item-active" aria-haspopup="true">
+											<li class="menu-item" aria-haspopup="true">
 												<a href="hotel-stairs.html" class="menu-link">
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
@@ -558,12 +555,12 @@
 								<!--begin::Info-->
 								<div class="d-flex align-items-center flex-wrap mr-2">
 									<!--begin::Page Title-->
-									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">호텔관리</h5>
+									<h5 class="text-dark font-weight-bold mt-2 mb-2 mr-5">키발급</h5>
 									<!--end::Page Title-->
 									<!--begin::Actions-->
 									<div class="subheader-separator subheader-separator-ver mt-2 mb-2 mr-4 bg-gray-200"></div>
-									<span class="text-muted font-weight-bold mr-4">호텔등록관리</span>
-									<a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">호텔건물층등록</a>
+									<span class="text-muted font-weight-bold mr-4">키발급하기</span>
+									<a href="#" class="btn btn-light-warning font-weight-bolder btn-sm">체크아웃</a>
 									<!--end::Actions-->
 								</div>
 								<!--end::Info-->
@@ -600,363 +597,128 @@
 										</span>
 									</div>
 									<div class="alert-text">
-									<p>호텔 건물 층정보를 입력하는 곳입니다. 먼저 호텔건물정보를 등록하셔야 합니다.</p>호텔건물등록하기
-									<a class="font-weight-bold" href="hotel-structure.html" target="_self">바로가기</a>.</div>
+									발급키 삭제(Check-out) 페이지입니다.
+									</div>
 								</div>
-								<!--end::Notice-->								
+								<!--end::Notice-->
 								<!--begin::Card-->
-								<div class="card card-custom gutter-b example example-compact">
+								<div class="card card-custom gutter-b">
 									<div class="card-header">
-										<h3 class="card-title">호텔건물 층 등록ㅣ<span style="color: red;">(예시:지하1층=B01 / 지상2층=02)</span></h3>
-										<div class="card-toolbar">
-											<div class="example-tools justify-content-center">
-												<span class="example-toggle" data-toggle="tooltip" title="View code"></span>
-												<span class="example-copy" data-toggle="tooltip" title="Copy code"></span>
-	     									</div>
-										</div>
+										<h3 class="card-title">검색 ㅣ<span style="color: brown;">키 정보를 입력해 주세요.</span></h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
 										<div class="card-body">
 											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">호텔명</label>
 												<div class="col-lg-3">
-     												<select class="form-control form-control-solid">
-														<option>Waffle Stay Hotel</option>
-                                    	            </select>	
-												</div>	
-												<label class="col-lg-2 col-form-label text-lg-right">건물이름</label>
-												<div class="col-lg-3">
-     												<select class="form-control form-control-solid">
-														<option>본관</option>
-														<option>별관</option>
-														<option>오션동</option>
-														<option>블루동</option>
-                                    	            </select>	
-												</div>																							
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right text-primary">시작 층번호</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="층 번호를 입력하세요" />
+													<input type="text" class="form-control" placeholder="객실번호/이름/연락처" />
 												</div>
-												<label class="col-lg-2 col-form-label text-lg-right text-primary">최종 층번호</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="마지막 층 번호를 입력하세요" />
-												</div>												
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right text-danger">개별 층 등록</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="등록하려는 층 을 입력" />
+                                                    <button class="btn btn-light-primary" type="button">검색</button>    
 												</div>
+												<label class="col-lg-3 col-form-label text-lg-right text-danger">검색에 없을 경우 키발급리스트에서 확인해주세요</label>
+												<a href="key-issued-list.html" class="btn btn-light-warning btn-sm">키발급리스트</a>
+
 											</div>
-										</div>
-										<div class="card-footer">
-											<div class="row">
-												<div class="col-lg-2"></div>
-												<div class="col-lg-10">
-													<button type="button" class="btn btn-light-primary font-weight-bold" id="kt_sweetalert_primary">저장</button>
-												</div>
-											</div>
-										</div>
+        								</div>
 									</form>
 									<!--end::Form-->
 								</div>
-								<!--end::Card-->		
+						        <!--end::Card-->
+
 								<!--begin::Card-->
-								<div class="card card-custom">
-									<div class="card-header flex-wrap border-0 pt-6 pb-0">
-										<div class="card-title">
-											<h3 class="card-label">호텔건물 층등록리스트
-											<span class="d-block text-muted pt-2 font-size-sm">등록된 호텔건물 층 리스트입니다.</span></h3>
-										</div>
-										<div class="card-toolbar">
-											<!--begin::Dropdown-->
-											<div class="dropdown dropdown-inline mr-2">
-												<button type="button" class="btn btn-light-primary font-weight-bolder dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												<span class="svg-icon svg-icon-md">
-													<!--begin::Svg Icon | path:assets/media/svg/icons/Design/PenAndRuller.svg-->
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-														<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-															<rect x="0" y="0" width="24" height="24" />
-															<path d="M3,16 L5,16 C5.55228475,16 6,15.5522847 6,15 C6,14.4477153 5.55228475,14 5,14 L3,14 L3,12 L5,12 C5.55228475,12 6,11.5522847 6,11 C6,10.4477153 5.55228475,10 5,10 L3,10 L3,8 L5,8 C5.55228475,8 6,7.55228475 6,7 C6,6.44771525 5.55228475,6 5,6 L3,6 L3,4 C3,3.44771525 3.44771525,3 4,3 L10,3 C10.5522847,3 11,3.44771525 11,4 L11,19 C11,19.5522847 10.5522847,20 10,20 L4,20 C3.44771525,20 3,19.5522847 3,19 L3,16 Z" fill="#000000" opacity="0.3" />
-															<path d="M16,3 L19,3 C20.1045695,3 21,3.8954305 21,5 L21,15.2485298 C21,15.7329761 20.8241635,16.200956 20.5051534,16.565539 L17.8762883,19.5699562 C17.6944473,19.7777745 17.378566,19.7988332 17.1707477,19.6169922 C17.1540423,19.602375 17.1383289,19.5866616 17.1237117,19.5699562 L14.4948466,16.565539 C14.1758365,16.200956 14,15.7329761 14,15.2485298 L14,5 C14,3.8954305 14.8954305,3 16,3 Z" fill="#000000" />
-														</g>
-													</svg>
-													<!--end::Svg Icon-->
-												</span>Export</button>
-												<!--begin::Dropdown Menu-->
-												<div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-													<!--begin::Navigation-->
-													<ul class="navi flex-column navi-hover py-2">
-														<li class="navi-header font-weight-bolder text-uppercase font-size-sm text-primary pb-2">Choose an option:</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-print"></i>
-																</span>
-																<span class="navi-text">Print</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-copy"></i>
-																</span>
-																<span class="navi-text">Copy</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-excel-o"></i>
-																</span>
-																<span class="navi-text">Excel</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-text-o"></i>
-																</span>
-																<span class="navi-text">CSV</span>
-															</a>
-														</li>
-														<li class="navi-item">
-															<a href="#" class="navi-link">
-																<span class="navi-icon">
-																	<i class="la la-file-pdf-o"></i>
-																</span>
-																<span class="navi-text">PDF</span>
-															</a>
-														</li>
-													</ul>
-													<!--end::Navigation-->
-												</div>
-												<!--end::Dropdown Menu-->
-											</div>
-											<!--end::Dropdown-->
-										</div>
+								<div class="card card-custom gutter-b">
+									<div class="card-header">
+										<h3 class="card-title">키 삭제정보ㅣCheck Out</h3>
 									</div>
-									<div class="card-body">
-										<!--begin: Search Form-->
-										<!--begin::Search Form-->
-										<div class="mb-7">
-											<div class="row align-items-center">
-												<div class="col-lg-9 col-xl-8">
-													<div class="row align-items-center">
-														<div class="col-md-4 my-2 my-md-0">
-															<div class="input-icon">
-																<input type="text" class="form-control" placeholder="Search..." id="kt_datatable_search_query" />
-																<span>
-																	<i class="flaticon2-search-1 text-muted"></i>
-																</span>
-															</div>
-														</div>
+									<!--begin::Form-->
+									<form class="form">
+										<div class="card-body">
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">예약번호</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="10123451" />
+												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">예약자명</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="이철수" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">예약일</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="21/06/07" />
+												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">전화번호</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="010-1234-1234" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">체크인</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="21/07/17" />
+												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">체크아웃</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="21/07/18" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">객실동</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="별관" />
+												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">호실</label>
+												<div class="col-lg-3">
+													<input type="text" class="form-control form-control-solid" value="1205" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-2 col-form-label text-lg-right">추가 발급키포함</label>
+												<div class="col-9 col-form-label">
+													<div class="radio-inline">
+														<label class="radio">
+														<input type="radio" name="radios5" checked="checked" />
+														<span></span>포함</label>
+														<label class="radio">
+														<input type="radio" name="radios5" />
+														<span></span>미포함</label>
 													</div>
 												</div>
 											</div>
-										</div>
-										<!--begin: Datatable-->
-										<table class="datatable datatable-bordered datatable-head-custom table" id="kt_datatable">
-											<thead class="thead-light">
-												<tr>
-													<th>호텔Code</th>
-													<th>호텔이름</th>
-													<th>건물Code</th>
-													<th>건물이름</th>
-													<th>등록 층</th>
-													<th>수정</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111000</td>
-													<td>본관</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111000</td>
-													<td>본관</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111000</td>
-													<td>본관</td>
-													<td>02</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111000</td>
-													<td>본관</td>
-													<td>03</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111200</td>
-													<td>별관</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>111200</td>
-													<td>별관</td>
-													<td>02</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>02</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>03</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>오션동</td>
-													<td>05</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>블루동</td>
-													<td>01</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>블루동</td>
-													<td>02</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-												<tr>
-													<td>110000</td>
-													<td>Waffle Stay</td>
-													<td>113000</td>
-													<td>블루동</td>
-													<td>03</td>
-													<td class="center">
-														<a href="hotel-stairs-edit.html" class="btn btn-icon btn-light-info btn-sm">
-															<i class="flaticon2-settings"></i>
-														</a>
-													</td>
-												</tr>
-											</tbody>
-										</table>
-										<!--end: Datatable-->
-									</div>
+											<div class="form-group row">
+												<label class="col-2 col-form-label text-lg-right">취소키 선택</label>
+												<div class="col-9 col-form-label">
+													<div class="checkbox-inline">
+														<label class="checkbox">
+														<input type="checkbox" checked="checked" />
+														<span></span>All</label>
+														<label class="checkbox">
+														<input type="checkbox" />
+														<span></span>모바일키</label>
+														<label class="checkbox">
+														<input type="checkbox" />
+														<span></span>카드키</label>
+														<label class="checkbox">
+														<input type="checkbox" />
+														<span></span>번호키</label>
+													</div>
+												</div>
+											</div>
+											<div class="card-footer">
+												<div class="row">
+													<div class="col-lg-2"></div>
+													<div class="col-lg-10">
+														<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">발급키삭제</button>
+													</div>
+												</div>
+											</div>
+        								</div>
+									</form>
+									<!--end::Form-->
 								</div>
-								<!--end::Card-->
+						        <!--end::Card-->
 							</div>
 							<!--end::Container-->
 						</div>

@@ -163,7 +163,7 @@
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">체크아웃</span>
+													<span class="menu-text">체크아웃ㅣ분실재발급</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -578,9 +578,9 @@
 						</div>
 						<!--end::Subheader-->
 						<!--begin::Entry-->
-					    	<div class="d-flex flex-column-fluid">
-							  	<!--begin::Container-->
-								<div class="container">
+					    <div class="d-flex flex-column-fluid">
+						  	<!--begin::Container-->
+							<div class="container">
 								<!--begin::Notice-->
 								<div class="alert alert-custom alert-white alert-shadow gutter-b" role="alert">
 									<div class="alert-icon">
@@ -597,61 +597,163 @@
 										</span>
 									</div>
 									<div class="alert-text">
-									발급키 삭제(Check-out) 페이지입니다.
+									Check-outㅣ발급키 분실등록 페이지입니다.
 									</div>
 								</div>
 								<!--end::Notice-->
-								<!--begin::Card-->
-								<div class="card card-custom gutter-b">
-									<div class="card-header">
-										<h3 class="card-title">검색 ㅣ<span style="color: brown;">키 정보를 입력해 주세요.</span></h3>
-									</div>
-									<!--begin::Form-->
-									<form class="form">
-										<div class="card-body">
-											<div class="form-group row">
-												<div class="col-lg-3">
-													<input type="text" class="form-control" placeholder="객실번호/이름/연락처" />
-												</div>
-												<div class="col-lg-3">
-                                                    <button class="btn btn-light-primary" type="button">검색</button>    
-												</div>
-												<label class="col-lg-3 col-form-label text-lg-right text-danger">검색에 없을 경우 키발급리스트에서 확인해주세요</label>
-												<a href="key-issued-list.html" class="btn btn-light-warning btn-sm">키발급리스트</a>
-
+								<div class="row">
+									<div class="col-xl-6">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b">
+											<div class="card-header">
+												<h3 class="card-title text-danger">검색 ㅣ정보를 입력해 주세요.</h3>
 											</div>
-        								</div>
-									</form>
-									<!--end::Form-->
+											<!--begin::Form-->
+											<form class="form">
+												<div class="card-body">
+													<div class="form-group row">
+														<div class="col-lg-6">
+															<input type="text" class="form-control" placeholder="객실번호/전화번호/이름" />
+														</div>
+														<div class="col-lg-3">
+		                                    	            <button class="btn btn-light-primary" type="button">검색</button>    
+														</div>
+													</div>
+       				 							</div>
+											</form>
+											<!--end::Form-->
+										</div>		
+								        <!--end::Card-->
+									</div>
+									<div class="col-xl-6">
+										<!--begin::Card-->
+										<div class="card card-custom gutter-b">
+											<div class="card-header">
+												<h3 class="card-title text-primary">카드정보를 읽어주세요.</h3>
+											</div>
+											<!--begin::Form-->
+											<form class="form">
+												<div class="card-body">
+													<div class="form-group row">
+														<label class="col-lg-2 col-form-label text-lg-left">발급UID값</label>
+														<div class="col-lg-6">
+															<input type="text" class="form-control" placeholder="0000000000" />
+														</div>
+														<div class="col-lg-3">
+		                        	                        <button class="btn btn-light-warning" type="button">읽기</button>    
+														</div>
+													</div>
+       				 							</div>
+											</form>
+											<!--end::Form-->
+										</div>		
+								        <!--end::Card-->
+									</div>
 								</div>
-						        <!--end::Card-->
+								<!--begin::Card-->
+								<div class="card card-custom">
+									<div class="card-header flex-wrap border-0 pt-6 pb-0">
+										<div class="card-title">
+											<h3 class="card-label">검색결과(기발급 리스트)
+											<span class="d-block text-muted pt-2 font-size-sm"><span style="color: crimson;">해당 객실 및 시설에 발급된 내역입니다.</span></span></h3>
+										</div>
+									</div>
+									<div class="card-body">
+										<!--begin: Datatable-->
+										<table class="datatable datatable-bordered datatable-head-custom table" id="kt_datatable">
+											<thead class="thead-light">
+												<tr>
+													<th>선택</th>
+													<th>객실동</th>
+													<th>호실ㅣ시설</th>
+													<th>이름</th>
+													<th>전화번호</th>
+													<th>체크인</th>
+													<th>발급유형</th>
+													<th>발급 UID값</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="center">
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
+														</a>
+													</td>
+													<td>블루동</td>
+													<td>1004</td>
+													<td>이철수</td>
+													<td>010-1234-1234</td>
+													<td>21/07/17</td>
+													<td>카드키</td>
+													<td>0000001004</td>
+												</tr>
+												<tr>
+													<td class="center">
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
+														</a>
+													</td>
+													<td>블루동</td>
+													<td>1004</td>
+													<td>정우성</td>
+													<td>010-1234-2234</td>
+													<td>21/07/17</td>
+													<td>모바일</td>
+													<td>0000001005</td>
+												</tr>
+												<tr>
+													<td class="center">
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
+														</a>
+													</td>
+													<td>블루동</td>
+													<td>1004</td>
+													<td>황정민</td>
+													<td>010-1234-3234</td>
+													<td>21/07/17</td>
+													<td>카드키</td>
+													<td>0000001005</td>
+												</tr>
+												<tr>
+													<td class="center">
+														<a href="#" class="btn btn-icon btn-light-info btn-sm">
+															<i class="flaticon2-check-mark"></i>
+														</a>
+													</td>
+													<td>블루동</td>
+													<td>1004</td>
+													<td>김국진</td>
+													<td>010-1234-4234</td>
+													<td>21/07/27</td>
+													<td>카드키</td>
+													<td>0000001006</td>
+												</tr>
+											</tbody>
+										</table>
+										<!--end: Datatable-->
+									</div>
+								</div>
+								<!--end::Card-->
+								<hr>
 
 								<!--begin::Card-->
 								<div class="card card-custom gutter-b">
 									<div class="card-header">
-										<h3 class="card-title">키 삭제정보ㅣCheck Out</h3>
+										<h3 class="card-title">선택 키 발급상세정보</h3>
 									</div>
 									<!--begin::Form-->
 									<form class="form">
 										<div class="card-body">
 											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">예약번호</label>
+												<label class="col-lg-2 col-form-label text-lg-right">객실동</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="10123451" />
+													<input type="text" class="form-control form-control-solid" value="블루동" />
 												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">예약자명</label>
+												<label class="col-lg-2 col-form-label text-lg-right">호실</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="이철수" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">예약일</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="21/06/07" />
-												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">전화번호</label>
-												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="010-1234-1234" />
+													<input type="text" class="form-control form-control-solid" value="1004" />
 												</div>
 											</div>
 											<div class="form-group row">
@@ -665,44 +767,33 @@
 												</div>
 											</div>
 											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">객실동</label>
+												<label class="col-lg-2 col-form-label text-lg-right">이름</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="별관" />
+													<input type="text" class="form-control form-control-solid" value="이철수" />
 												</div>
-												<label class="col-lg-2 col-form-label text-lg-right">호실</label>
+												<label class="col-lg-2 col-form-label text-lg-right">전화번호</label>
 												<div class="col-lg-3">
-													<input type="text" class="form-control form-control-solid" value="1205" />
+													<input type="text" class="form-control form-control-solid" value="010-1234-1234" />
 												</div>
 											</div>
+
 											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">추가 발급키포함</label>
-												<div class="col-9 col-form-label">
-													<div class="radio-inline">
-														<label class="radio">
-														<input type="radio" name="radios5" checked="checked" />
-														<span></span>포함</label>
-														<label class="radio">
-														<input type="radio" name="radios5" />
-														<span></span>미포함</label>
-													</div>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-2 col-form-label text-lg-right">취소키 선택</label>
+												<label class="col-2 col-form-label text-lg-right text-primary">옵션정보</label>
 												<div class="col-9 col-form-label">
 													<div class="checkbox-inline">
 														<label class="checkbox">
 														<input type="checkbox" checked="checked" />
-														<span></span>All</label>
+														<span></span>뷔페</label>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>모바일키</label>
+														<input type="checkbox" checked="checkbox" />
+														<span></span>스파</label>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>카드키</label>
+														<input type="checkbox" checked="checkbox" />
+														<span></span>북카페</label>
 														<label class="checkbox">
-														<input type="checkbox" />
-														<span></span>번호키</label>
+														<input type="checkbox" checked="checkbox" />
+														<span></span>실외수영장</label>
+														\
 													</div>
 												</div>
 											</div>
@@ -710,7 +801,8 @@
 												<div class="row">
 													<div class="col-lg-2"></div>
 													<div class="col-lg-10">
-														<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">발급키삭제</button>
+														<button type="button" class="btn btn-light-danger font-weight-bold" id="kt_sweetalert_delete">체크아웃</button>
+														<button type="button" class="btn btn-light-success font-weight-bold" id="kt_sweetalert_nfc">카드키재발급</button>
 													</div>
 												</div>
 											</div>
@@ -727,16 +819,13 @@
 					<!--end::Content-->
 					<!--begin::Footer-->
 					<div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
-						<!--begin::Container-->
 						<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
 							<!--begin::Copyright-->
 							<div class="text-dark order-2 order-md-1">
 								<span class="text-muted font-weight-bold mr-2">2021©</span>
 								<a href="#" target="_self" class="text-dark-75 text-hover-primary">Waffle Stay System</a>
 							</div>
-							<!--end::Copyright-->
 						</div>
-						<!--end::Container-->
 					</div>
 					<!--end::Footer-->
 				</div>

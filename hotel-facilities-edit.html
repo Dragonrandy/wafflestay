@@ -163,7 +163,7 @@
 													<i class="menu-bullet menu-bullet-dot">
 														<span></span>
 													</i>
-													<span class="menu-text">체크아웃</span>
+													<span class="menu-text">체크아웃ㅣ분실재발급</span>
 												</a>
 											</li>
 											<li class="menu-item" aria-haspopup="true">
@@ -609,29 +609,21 @@
 									<form class="form">
 										<div class="card-body">
 											<div class="form-group row">
-												<label class="col-lg-2 col-form-label text-lg-right">호텔명</label>
-												<div class="col-lg-3">
-     												<select class="form-control form-control-solid">
-														<option>Waffle Stay Hotel</option>
-                                    	            </select>	
-												</div>	
 												<label class="col-lg-2 col-form-label text-lg-right">건물이름</label>
 												<div class="col-lg-3">
      												<select class="form-control form-control-solid">
-														<option>본관</option>
+														<option selected>본관</option>
 														<option>별관</option>
-														<option selected>오션동</option>
+														<option>오션동</option>
 														<option>블루동</option>
                                     	            </select>	
-												</div>																							
-											</div>
-											<div class="form-group row">
+												</div>	
 												<label class="col-lg-2 col-form-label text-lg-right">층 선택</label>
 												<div class="col-lg-3">
      												<select class="form-control form-control-solid">
-														<option>01</option>
+														<option selected>B1</option>
 														<option>02</option>
-														<option selected>03</option>
+														<option>03</option>
 														<option>05</option>
 														<option>06</option>
 														<option>07</option>
@@ -641,7 +633,33 @@
 														<option>11</option>
 														<option>12</option>
                                     	            </select>	
+												</div>																						
+											</div>
+											<div class="form-group row">
+												<label class="col-lg-2 col-form-label text-lg-right">시설분류1</label>
+												<div class="col-lg-3">
+													<select id="select1" class="form-control" onchange="javscript:fnSelect(this);"> 
+														<option selected>다이닝</option>
+														<option>카페&펍</option>
+														<option>POOL</option>
+														<option>헬스ㅣ사우나</option>
+														<option>비니니스</option>
+														<option>VIP</option>
+													</select> 
 												</div>
+												<label class="col-lg-2 col-form-label text-lg-right">시설분류2</label>
+												<div class="col-lg-3">
+													<select id="select2" class="form-control" onchange="javscript:fnSelect(this);">
+														<option>뷔페</option> 
+														<option selected>한식</option> 
+														<option>중식</option> 
+														<option>일식</option> 
+														<option>로컬푸드</option> 
+														<option>세계음식</option> 
+													</select>
+												</div>
+											</div>	
+											<div class="form-group row">
 												<label class="col-lg-2 col-form-label text-lg-right">부대시설명</label>
 												<div class="col-lg-3">
 													<input type="text" class="form-control form-control-solid" value="레스토랑 피렌체" />
